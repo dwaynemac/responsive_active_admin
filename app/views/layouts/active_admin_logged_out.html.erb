@@ -9,7 +9,7 @@
   <% ActiveAdmin.application.stylesheets.each do |style, options| %>
     <%= stylesheet_link_tag style, options %>
   <% end %>
-  <% ActiveAdmin.application.javascripts.each do |path| %>
+  <% ActiveAdmin.application.javascripts.flatten.each do |path| %>
     <%= javascript_include_tag path %>
   <% end %>
 
